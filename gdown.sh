@@ -36,7 +36,8 @@ if [ -f "$filename" ]; then
 
     # Mengunduh file dari Google Drive menggunakan gdown
 
-    gdown "$line" -O "$FILENAME-$fileid"
+    gdown "$line" 
+    #-O "$FILENAME-$fileid"
 
   done < "$filename"
 
